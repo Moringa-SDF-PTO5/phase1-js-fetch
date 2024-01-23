@@ -56,7 +56,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // make network request
-    const request = fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=991a1731e00a4b5a83bb6b22ca744fcc")
+    const request = fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=KEY_HERE", {
+       method: 'POST' 
+    })
     request.then(
         (result) => {
             console.log("result", result)
